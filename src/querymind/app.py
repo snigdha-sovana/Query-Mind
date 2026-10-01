@@ -22,6 +22,7 @@ DEFAULT_DB = BASE_DIR / "tests" / "fixtures" / "fixture.sqlite"
 
 if not DEFAULT_DB.exists():
     try:
+        # pyrefly: ignore [missing-import]
         from tests.fixtures.build_fixture import build
         build(DEFAULT_DB)
     except Exception:
