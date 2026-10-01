@@ -20,6 +20,13 @@ from querymind.graph.builder import build_graph
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 DEFAULT_DB = BASE_DIR / "tests" / "fixtures" / "fixture.sqlite"
 
+if not DEFAULT_DB.exists():
+    try:
+        from tests.fixtures.build_fixture import build
+        build(DEFAULT_DB)
+    except Exception:
+        pass
+
 st.set_page_config(page_title="QueryMind Analyst", page_icon="🧠", layout="wide")
 
 st.title("🧠 QueryMind Autonomous Data Analyst")

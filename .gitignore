@@ -8,6 +8,7 @@ env.bak/
 project docs/
 project docs
 *.sqlite
+!tests/fixtures/fixture.sqlite
 *.sqlite-journal
 .pytest_cache/
 *.egg-info/
