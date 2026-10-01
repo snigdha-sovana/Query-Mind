@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "querymind"
+version = "0.1.0"
+description = "Multi-agent autonomous data analyst over relational databases"
+readme = "brain.md"
+requires-python = ">=3.11"
+dependencies = [
+  "langgraph",
+  "langchain-google-genai",
+  "langchain-openai",
+  "langchain-community",
+  "sqlalchemy",
+  "chromadb",
+  "python-dotenv",
+  "streamlit",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov", "pytest-playwright"]
+
+[project.scripts]
+querymind-eval = "querymind.eval.harness:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"

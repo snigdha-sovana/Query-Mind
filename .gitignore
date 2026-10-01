@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+ENV/
+env.bak/
+project docs/
+project docs
+*.sqlite
+*.sqlite-journal
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+logs/traces/

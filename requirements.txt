@@ -1,0 +1,14 @@
+streamlit
+pandas
+langgraph
+langchain-google-genai
+langchain-community
+langchain-openai
+groq
+sqlalchemy
+chromadb
+pytest
+pytest-cov
+python-dotenv
+
+

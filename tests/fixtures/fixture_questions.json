@@ -1,0 +1,17 @@
+[
+  {
+    "question": "What is the total revenue?",
+    "gold_sql": "SELECT SUM(amount) AS total FROM sales;",
+    "gold_tables": ["sales"]
+  },
+  {
+    "question": "How many customers live in North?",
+    "gold_sql": "SELECT COUNT(*) AS n FROM customers WHERE district = 'North';",
+    "gold_tables": ["customers"]
+  },
+  {
+    "question": "Which product has the highest stock?",
+    "gold_sql": "SELECT name FROM products ORDER BY stock DESC LIMIT 1;",
+    "gold_tables": ["products"]
+  }
+]

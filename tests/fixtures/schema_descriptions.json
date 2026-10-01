@@ -1,0 +1,26 @@
+{
+  "sales": {
+    "table": "revenue sales transactions",
+    "columns": {
+      "id": "sale identifier",
+      "customer_id": "buyer customer id",
+      "amount": "sale revenue amount in dollars"
+    }
+  },
+  "customers": {
+    "table": "customer people directory",
+    "columns": {
+      "id": "customer identifier",
+      "name": "customer full name",
+      "district": "customer region or district"
+    }
+  },
+  "products": {
+    "table": "inventory products catalog",
+    "columns": {
+      "id": "product identifier",
+      "name": "product name",
+      "stock": "units remaining in inventory"
+    }
+  }
+}

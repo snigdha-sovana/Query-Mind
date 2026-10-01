@@ -1,0 +1,22 @@
+{
+  "ablation_summary": {
+    "baseline_engine_accuracy": 1.0,
+    "full_graph_accuracy": 1.0,
+    "schema_linking_recall": 0.984375,
+    "repair_rate": 0.0
+  },
+  "details": {
+    "engine": {
+      "n": 48,
+      "execution_accuracy": 1.0,
+      "schema_linking_recall": 0.984375,
+      "repair_rate": 0.0,
+      "gold_exec_failures": 0
+    },
+    "graph": {
+      "n": 48,
+      "e2e_accuracy": 1.0,
+      "gold_exec_failures": 0
+    }
+  }
+}
