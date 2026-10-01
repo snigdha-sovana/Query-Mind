@@ -9,6 +9,13 @@ project docs/
 project docs
 *.sqlite
 !tests/fixtures/fixture.sqlite
+!data/dev_databases/student_club/*.sqlite
+!data/dev_databases/superhero/*.sqlite
+!data/dev_databases/toxicology/*.sqlite
+!data/dev_databases/thrombosis_prediction/*.sqlite
+!data/dev_databases/california_schools/*.sqlite
+!data/dev_databases/formula_1/*.sqlite
+!data/dev_databases/debit_card_specializing/*.sqlite
 *.sqlite-journal
 .pytest_cache/
 *.egg-info/
